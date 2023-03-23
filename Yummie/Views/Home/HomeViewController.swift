@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import ProgressHUD
 class HomeViewController: UIViewController{
     
     
@@ -14,26 +14,12 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var specialsCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
-    var categories : [DishCategory] = [
-        .init(id: "id1", name: "Africa Dish ", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 2 ", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 3", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 4", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 5", image: "https://picsum.photos/100/200")
-    ]
-    var populars : [Dish] = [
-        .init(id: "id1", name: "Garri", description: "Best meal i have ever tested", image: "https://picsum.photos/100/200", calories: 34),
-        .init(id: "id1", name: "Indomie", description: "Best meal i have ever tested", image: "https://picsum.photos/100/200", calories: 566),
-        .init(id: "id1", name: "Pizza", description: "Best meal i have ever tested", image: "https://picsum.photos/100/200", calories: 400),
-       
-        
-    ]
-    var specials:[Dish]=[
-        .init(id: "id1", name: "Fried Plantain", description: "This is my favorite dish.", image: "https://picsum.photos/100/200", calories: 1200),
-        .init(id: "id1", name: "Fried Plantain", description: "This is my favorite dish.", image: "https://picsum.photos/100/200", calories: 1200),
-        .init(id: "id1", name: "Fried Plantain", description: "This is my favorite dish.", image: "https://picsum.photos/100/200", calories: 1200)]
+    var categories : [DishCategory] = []
+    var populars : [Dish] = []
+    var specials:[Dish] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         categoryCollectionView.delegate = self
         popularCollectionView.delegate = self
         specialsCollectionView.delegate = self
@@ -41,6 +27,23 @@ class HomeViewController: UIViewController{
         popularCollectionView.dataSource = self 
         categoryCollectionView.dataSource = self
         registerCells()
+        ProgressHUD.show()
+        NetworkService.shared.fetchAllCategories { [weak self] (result) in
+        
+            switch result {
+            case .success(let allDishes):
+                self?.categories = allDishes.categories ?? []
+                self?.populars = allDishes.populars ?? []
+                self?.specials = allDishes.specials ??  []
+                self?.categoryCollectionView.reloadData()
+                self?.specialsCollectionView.reloadData()
+                self?.popularCollectionView.reloadData()
+                ProgressHUD.dismiss()
+            case .failure(let error):
+                print("The error is: \(error.localizedDescription ?? "Unknown Error")")
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     private func registerCells()
     {
@@ -82,7 +85,25 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
             return cell
         default: return UICollectionViewCell()
         }
+    
         
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView{
+            let controller = ListDishesViewController.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+        }
+        else
+        {
+            
+            let controller = DishDetailViewController.instantiate()
+            controller.dish = collectionView ==
+            popularCollectionView ?
+            populars[indexPath.row] :
+            specials[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
     
 }

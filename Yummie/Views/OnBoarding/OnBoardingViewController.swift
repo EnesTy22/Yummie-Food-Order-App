@@ -27,6 +27,7 @@ class OnBoardingViewController: UIViewController {
     var slides : [OnboardingSlide] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         collectionView.delegate=self
         collectionView.dataSource=self
         slides = [
@@ -46,6 +47,7 @@ class OnBoardingViewController: UIViewController {
             let controller = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .crossDissolve
+            UserDefaults.standard.hasOnboarded = true
             present(controller,animated: true,completion: nil)
         }
         else{

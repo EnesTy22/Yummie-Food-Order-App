@@ -13,12 +13,22 @@
 		BD32A1CE29C48017007BDAD4 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32A1CD29C48017007BDAD4 /* Dish.swift */; };
 		BD32A1D229C4A227007BDAD4 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32A1D029C4A227007BDAD4 /* DishLandscapeCollectionViewCell.swift */; };
 		BD32A1D329C4A227007BDAD4 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD32A1D129C4A227007BDAD4 /* DishLandscapeCollectionViewCell.xib */; };
+		BD33259A29C73E3400653B25 /* ListOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD33259929C73E3400653B25 /* ListOrderViewController.swift */; };
+		BD33259C29C73F7F00653B25 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD33259B29C73F7F00653B25 /* Order.swift */; };
+		BD33259F29C7683300653B25 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD33259E29C7683300653B25 /* NetworkService.swift */; };
+		BD3325A129C768EA00653B25 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3325A029C768EA00653B25 /* Route.swift */; };
+		BD3325A529C76A1A00653B25 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3325A429C76A1A00653B25 /* Method.swift */; };
 		BD74043229C4684900240D13 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74043129C4684900240D13 /* CardView.swift */; };
 		BD75433C29C33854004B55DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75433B29C33854004B55DA /* HomeViewController.swift */; };
 		BD82EE9429C3A48100065D95 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82EE9229C3A48100065D95 /* CategoryCollectionViewCell.swift */; };
 		BD82EE9529C3A48100065D95 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD82EE9329C3A48100065D95 /* CategoryCollectionViewCell.xib */; };
 		BD82EE9729C3A67D00065D95 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82EE9629C3A67D00065D95 /* DishCategory.swift */; };
 		BD82EE9929C3B12500065D95 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82EE9829C3B12500065D95 /* StringExtention.swift */; };
+		BD9E064529C6420C001FD695 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E064429C6420C001FD695 /* DishDetailViewController.swift */; };
+		BD9E064729C64591001FD695 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E064629C64591001FD695 /* UIViewControllerExtention.swift */; };
+		BD9F8B8729CB473700CC892C /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F8B8629CB473700CC892C /* ApiResponse.swift */; };
+		BD9F8B8929CB60CC00CC892C /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F8B8829CB60CC00CC892C /* AllDishes.swift */; };
+		BD9FBE6C29C89D3D0070454C /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FBE6B29C89D3D0070454C /* AppError.swift */; };
 		BDB1BBB429C22A9400932979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1BBB329C22A9400932979 /* AppDelegate.swift */; };
 		BDB1BBB629C22A9400932979 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1BBB529C22A9400932979 /* SceneDelegate.swift */; };
 		BDB1BBBB29C22A9400932979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB1BBB929C22A9400932979 /* Main.storyboard */; };
@@ -28,6 +38,10 @@
 		BDB1BBCF29C24D0200932979 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1BBCE29C24D0200932979 /* UIViewExtention.swift */; };
 		BDB1BBD129C24EDC00932979 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1BBD029C24EDC00932979 /* OnboardingSlide.swift */; };
 		BDB1BBD329C2541E00932979 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1BBD229C2541E00932979 /* OnboardingCollectionViewCell.swift */; };
+		BDC4246429C71B580080EACC /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4246229C71B580080EACC /* DishListTableViewCell.swift */; };
+		BDC4246529C71B580080EACC /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC4246329C71B580080EACC /* DishListTableViewCell.xib */; };
+		BDC4246829C720BF0080EACC /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4246729C720BF0080EACC /* ListDishesViewController.swift */; };
+		BDCA656E29CC53D800C1C420 /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA656D29CC53D800C1C420 /* UserDefaultExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +52,22 @@
 		BD32A1CD29C48017007BDAD4 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		BD32A1D029C4A227007BDAD4 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD32A1D129C4A227007BDAD4 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		BD33259929C73E3400653B25 /* ListOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrderViewController.swift; sourceTree = "<group>"; };
+		BD33259B29C73F7F00653B25 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		BD33259E29C7683300653B25 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BD3325A029C768EA00653B25 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		BD3325A429C76A1A00653B25 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		BD74043129C4684900240D13 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BD75433B29C33854004B55DA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BD82EE9229C3A48100065D95 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD82EE9329C3A48100065D95 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		BD82EE9629C3A67D00065D95 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		BD82EE9829C3B12500065D95 /* StringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		BD9E064429C6420C001FD695 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		BD9E064629C64591001FD695 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
+		BD9F8B8629CB473700CC892C /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		BD9F8B8829CB60CC00CC892C /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
+		BD9FBE6B29C89D3D0070454C /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		BDB1BBB029C22A9400932979 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB1BBB329C22A9400932979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDB1BBB529C22A9400932979 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +79,10 @@
 		BDB1BBCE29C24D0200932979 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
 		BDB1BBD029C24EDC00932979 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		BDB1BBD229C2541E00932979 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDC4246229C71B580080EACC /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		BDC4246329C71B580080EACC /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		BDC4246729C720BF0080EACC /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		BDCA656D29CC53D800C1C420 /* UserDefaultExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtention.swift; sourceTree = "<group>"; };
 		DE5E79F1A9B07B86317E358E /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +133,26 @@
 			path = DashLandscapeCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		BD33259829C73DF600653B25 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				BD33259929C73E3400653B25 /* ListOrderViewController.swift */,
+			);
+			path = ListOrders;
+			sourceTree = "<group>";
+		};
+		BD33259D29C7681B00653B25 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BD33259E29C7683300653B25 /* NetworkService.swift */,
+				BD3325A029C768EA00653B25 /* Route.swift */,
+				BD3325A429C76A1A00653B25 /* Method.swift */,
+				BD9FBE6B29C89D3D0070454C /* AppError.swift */,
+				BD9F8B8629CB473700CC892C /* ApiResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		BD74043029C4681700240D13 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +188,14 @@
 			path = CategoryCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		BD9E064329C641D4001FD695 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BD9E064429C6420C001FD695 /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
 		BDB1BBA729C22A9400932979 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +217,7 @@
 		BDB1BBB229C22A9400932979 /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				BD33259D29C7681B00653B25 /* Networking */,
 				BDB1BBCD29C24CCE00932979 /* Extentions */,
 				BDB1BBC929C2310D00932979 /* CustomViews */,
 				BDB1BBC829C230E300932979 /* Views */,
@@ -181,6 +238,8 @@
 				BDB1BBD029C24EDC00932979 /* OnboardingSlide.swift */,
 				BD82EE9629C3A67D00065D95 /* DishCategory.swift */,
 				BD32A1CD29C48017007BDAD4 /* Dish.swift */,
+				BD33259B29C73F7F00653B25 /* Order.swift */,
+				BD9F8B8829CB60CC00CC892C /* AllDishes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +247,9 @@
 		BDB1BBC829C230E300932979 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BD33259829C73DF600653B25 /* ListOrders */,
+				BDC4246629C720980080EACC /* ListDishes */,
+				BD9E064329C641D4001FD695 /* DishDetail */,
 				BD75433829C33711004B55DA /* Home */,
 				BDB1BBCA29C2311C00932979 /* OnBoarding */,
 			);
@@ -197,6 +259,7 @@
 		BDB1BBC929C2310D00932979 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				BDC4246029C71B1B0080EACC /* TableViewCells */,
 				BD74043029C4681700240D13 /* CardView */,
 				BD82EE8E29C3A3D100065D95 /* CollectionViewCells */,
 			);
@@ -217,8 +280,35 @@
 			children = (
 				BDB1BBCE29C24D0200932979 /* UIViewExtention.swift */,
 				BD82EE9829C3B12500065D95 /* StringExtention.swift */,
+				BD9E064629C64591001FD695 /* UIViewControllerExtention.swift */,
+				BDCA656D29CC53D800C1C420 /* UserDefaultExtention.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		BDC4246029C71B1B0080EACC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4246129C71B270080EACC /* DishListTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		BDC4246129C71B270080EACC /* DishListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4246229C71B580080EACC /* DishListTableViewCell.swift */,
+				BDC4246329C71B580080EACC /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCell;
+			sourceTree = "<group>";
+		};
+		BDC4246629C720980080EACC /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4246729C720BF0080EACC /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD82EE9529C3A48100065D95 /* CategoryCollectionViewCell.xib in Resources */,
+				BDC4246529C71B580080EACC /* DishListTableViewCell.xib in Resources */,
 				BDB1BBC029C22A9600932979 /* LaunchScreen.storyboard in Resources */,
 				BD32A1CC29C47D5A007BDAD4 /* DishPortraitCollectionViewCell.xib in Resources */,
 				BDB1BBBD29C22A9600932979 /* Assets.xcassets in Resources */,
@@ -339,17 +430,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC4246429C71B580080EACC /* DishListTableViewCell.swift in Sources */,
 				BD82EE9429C3A48100065D95 /* CategoryCollectionViewCell.swift in Sources */,
+				BD33259C29C73F7F00653B25 /* Order.swift in Sources */,
 				BDB1BBD129C24EDC00932979 /* OnboardingSlide.swift in Sources */,
 				BDB1BBB429C22A9400932979 /* AppDelegate.swift in Sources */,
 				BDB1BBB629C22A9400932979 /* SceneDelegate.swift in Sources */,
 				BDB1BBCC29C2315700932979 /* OnBoardingViewController.swift in Sources */,
+				BD9F8B8929CB60CC00CC892C /* AllDishes.swift in Sources */,
+				BDCA656E29CC53D800C1C420 /* UserDefaultExtention.swift in Sources */,
+				BD9E064729C64591001FD695 /* UIViewControllerExtention.swift in Sources */,
+				BD3325A529C76A1A00653B25 /* Method.swift in Sources */,
 				BDB1BBCF29C24D0200932979 /* UIViewExtention.swift in Sources */,
+				BD9E064529C6420C001FD695 /* DishDetailViewController.swift in Sources */,
 				BD75433C29C33854004B55DA /* HomeViewController.swift in Sources */,
 				BD82EE9929C3B12500065D95 /* StringExtention.swift in Sources */,
+				BD9F8B8729CB473700CC892C /* ApiResponse.swift in Sources */,
 				BD32A1D229C4A227007BDAD4 /* DishLandscapeCollectionViewCell.swift in Sources */,
+				BD3325A129C768EA00653B25 /* Route.swift in Sources */,
+				BD33259F29C7683300653B25 /* NetworkService.swift in Sources */,
 				BD82EE9729C3A67D00065D95 /* DishCategory.swift in Sources */,
 				BD74043229C4684900240D13 /* CardView.swift in Sources */,
+				BD33259A29C73E3400653B25 /* ListOrderViewController.swift in Sources */,
+				BDC4246829C720BF0080EACC /* ListDishesViewController.swift in Sources */,
+				BD9FBE6C29C89D3D0070454C /* AppError.swift in Sources */,
 				BDB1BBD329C2541E00932979 /* OnboardingCollectionViewCell.swift in Sources */,
 				BD32A1CE29C48017007BDAD4 /* Dish.swift in Sources */,
 				BD32A1CB29C47D5A007BDAD4 /* DishPortraitCollectionViewCell.swift in Sources */,
